@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>交路查询</title>
-    <style>
-        button{
-	            background-color:#f66f6a;
-	            color:white;
-	            width: 400px;
-	            height: 45px;
-	            border:0;
-	            font-size: 16px;
-	            box-sizing: content-box;
-                border-radius: 5px;
+    <head>
+        <meta charset="UTF-8">
+        <title>交路查询</title>
+        <style>
+            button{
+                    background-color:#f66f6a;
+                    color:white;
+                    width: 400px;
+                    height: 45px;
+                    border:0;
+                    font-size: 16px;
+                    box-sizing: content-box;
+                    border-radius: 5px;
+                }
+                button:hover{
+                    background-color: #a54b4a;
+                }
+        </style>
+        <script>
+            function return_home(){
+                location.href = "index.html"
             }
-            button:hover{
-	            background-color: #a54b4a;
+            function github(){
+                location.href = "https://github.com/timselfpy/search-train/"
             }
-    </style>
-    <script>
-        function return_home(){
-            location.href = "index.html"
-        }
-        function github(){
-            location.href = "https://github.com/timselfpy/search-train/"
-        }
-        function download_rail(){
-            location.href = "https://wwo.lanzn.com/iuPWe21nsaid"
-        }
-    </script>
-</head>
-<body>
-<button onclick="return_home()">返回</button>
-<button onclick="github()">Github</button>
-<h1>交路查询 for windows3.0.0</h1>
-<button onclick="download_rail()">下载windows版</button>
-</body>
+            function download_rail_3_0_0_p(){
+                location.href = "https://wwo.lanzn.com/iuPWe21nsaid"
+            }
+            function download_rail_1_0_0_p(){
+                location.href = "https://wwo.lanzn.com/iLaf924876ha"
+            }
+            function download_rail_1_0_0_h(){
+                location.href = "https://wwo.lanzn.com/iLaf924876ha"
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="return_home()">返回</button>
+        <button onclick="github()">Github</button>
+        <h1>交路查询 for windows3.0.0豪华版</h1>
+        <img src="QQ图片20240712103958.png">
+
+        <h2>更新内容</h2>
+        <p>在车次查询过程中添加了担当路局</p>
+        <button onclick="download_rail_3_0_0_h()", style="background: deepskyblue">下载windows版</button>
+
+        <br><br><br><br><br>
+
+        <h3>历史版本</h3>
+
+        <div>
+
+            <p>3.0.0普通版</p>
+            <h4>更新内容</h4>
+            <p>更新界面为ttk，更美观。</p>
+            <p>将两个搜索框合并，更简洁</p>
+            <P>显示的是表格，更符合直觉。</P>
+            <button onclick="download_rail_3_0_0_p()">下载windows版</button>
+
+        </div>
+
+        <div>
+
+            <p>1.0.0</p>
+            <h4>更新内容</h4>
+            <p>界面为图形化，更符合直觉。</p>
+            <button onclick="download_rail_1_0_0_p()">下载windows版</button>
+
+        </div>
+
+
+    </body>
 </html>
